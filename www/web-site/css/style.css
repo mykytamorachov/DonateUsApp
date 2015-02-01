@@ -15,25 +15,6 @@ body, html{
 	display: none;
 }
 
-.why{
-	position: absolute;
-	top: 80%;
-	left: 45%;
-	color: #98cb00;
-	font-family: Roboto !important;
-}
-
-.because{
-	font-size: 10vh;
-	text-align: center;
-	top: 48%;
-	left: 16%;
-	display:none;
-}
-
-div.seriously{
-	visibility: hidden;
-}
 #circle, .lable {
 	cursor: pointer;
 }
