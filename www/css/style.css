@@ -24,13 +24,20 @@ body, html{
 }
 
 .because{
-	font-size: 10vh;
+	font-size: 6vh;
 	text-align: center;
 	top: 48%;
-	left: 16%;
+	left: 5%;
+	line-height: 40px;
 	display:none;
 }
-
+.fb-share-button{
+	position: fixed !important;
+	top: 96%;
+	left: 40%;
+	height: 200px;
+	width: 200px;
+}	
 div.seriously{
 	visibility: hidden;
 }
