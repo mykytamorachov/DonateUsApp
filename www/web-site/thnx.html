@@ -21,7 +21,7 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
   </head>
-  <body ng-app="starter">
+  <body ng-app="starter" class="thanks">
    <form id="paypal" class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <input type="hidden" name="cmd" value="_s-xclick">
       <input type="hidden" name="lc" value="US">
@@ -30,6 +30,8 @@
       <input type="image" src="https://www.paypalobjects.com/en_US/PL/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
       <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
     </form> 
+
+    
   <!-- <button class="donate"></button> -->
 
   <svg width="100%" height="100%">
@@ -37,8 +39,7 @@
           </circle>
           <text x="50%" y="52%" font-family="Roboto" font-size="10vw" text-anchor="middle" fill="white" class="lable">DONATE</text>
   </svg>
-  <div class="why">Why?</div>
-  <div class="why because">So that we can develop an app that is worth it!</div>
+  <div class="why because">Thank you, </br> You are awesome!</div>
   <script>
       $(document).ready(function()
       {
@@ -47,24 +48,6 @@
           document.getElementById('circle').classList.add('pulse');
           document.getElementById('paypal').submit();
         }
-
-        $("div.why").click(function(e) {
-          $( "svg>text" ).animate({
-            "font-size":"3vh",
-            left:"+=1vh"
-          } ,500, function() {
-          });
-
-          $( "svg" ).animate({
-            height: "30%",
-            "margin-top":'20%'
-          }, 500,function() {
-            $( ".why" ).hide();
-            $( ".why.because" ).show();
-          });
-
-        });
-
       });
   </script>
   </body>

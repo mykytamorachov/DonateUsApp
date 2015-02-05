@@ -26,6 +26,7 @@ body, html{
 	animation: pulse 2s linear infinite;
 }
 
+
 @keyframes "pulse" {
  0% {
     fill: rgb(152, 203, 0);
@@ -75,4 +76,25 @@ body, html{
  100% {
     fill: rgba(152, 203, 0);
  }
+}
+
+.thanks svg>text{
+	font-size:3vh;
+    left:1vh;
+}
+
+.thanks svg{
+    height: 30%;
+    margin-top: 20%;
+}
+
+.thanks .because{
+	font-size: 5vh;
+	text-align: center;
+	width: 100%;
+	top: 60%;
+	line-height: 40px;
+	color: white;
+	position: absolute;
+	font-family: Roboto !important;
 }
